@@ -3,13 +3,22 @@
 This is the code and associated datasets for the paper titled 
 
 >[Tailoring Self-Rationalizers with Multi-Reward Distillation. *Sahana Ramnath, Brihi Joshi, Skyler Hallinan, Ximing Lu, Liunian Harold Li, Aaron Chan, Jack Hessel, Yejin Choi, Xiang Ren.*]()
-<img src="https://github.com/iitmnlp/BERT-Analysis-RCQA/assets/17588365/f9ac3e1a-b983-4b4a-a93d-c18e88da63de" width=600>
+
+<p align="center">
+<img src="https://github.com/iitmnlp/BERT-Analysis-RCQA/assets/17588365/f9ac3e1a-b983-4b4a-a93d-c18e88da63de" width=900>
+</p>
 
 [README in-progress]
 
 ## Dataset
 We provide our train/val/test data splits in folder ```data```. 
+### Creating the train set
+to-do
+### Preprocessing data and creating data splits
+to-do
 
-# Training the base model (```SFT```)
+## Training the baseline models
+to-do
 
-# Training ```MaRio```
+## Training ```MaRio```
+to-do
