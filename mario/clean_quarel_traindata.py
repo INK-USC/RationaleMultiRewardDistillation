@@ -33,7 +33,7 @@ def main():
     # raw train data to be saved
     running_idx = 0
     train_data_jsonl = {}
-    f=open("data/quarel_new/raw/train.tsv", "w")
+    f=open("data/quarel/raw/train.tsv", "w")
     f.write("Question" + "\t" + "Rationale" + "\t" + "Label" + "\n")
     for i in range(len(train_loaded_w_silver_rationales)):
         ct_question = train_loaded_w_silver_rationales.iloc[i]['question']
@@ -52,11 +52,11 @@ def main():
         train_data_jsonl[running_idx] = {'question': ct_question, 'rationale': ct_pred_rationale, 'answer': ct_pred_label}
         running_idx += 1
     f.close()
-    with open("data/quarel_new/raw/train.jsonl", "w") as f:
+    with open("data/quarel/raw/train.jsonl", "w") as f:
         json.dump(train_data_jsonl, f)
 
     # raw dev data to be saved
-    f=open("data/quarel_new/raw/dev.tsv", "w")
+    f=open("data/quarel/raw/dev.tsv", "w")
     f.write("Question" + "\t" + "Rationale" + "\t" + "Label" + "\n")
     running_idx = 0
     dev_data_jsonl = {}
@@ -70,11 +70,11 @@ def main():
         dev_data_jsonl[running_idx] = {'question': ct_question, 'rationale': rationale, 'answer': gold_choice}
         running_idx += 1
     f.close()
-    with open("data/quarel_new/raw/dev.jsonl", "w") as f:
+    with open("data/quarel/raw/dev.jsonl", "w") as f:
         json.dump(dev_data_jsonl, f)
 
     # raw test data to be saved
-    f=open("data/quarel_new/raw/test.tsv", "w")
+    f=open("data/quarel/raw/test.tsv", "w")
     f.write("Question" + "\t" + "Rationale" + "\t" + "Label" + "\n")
     running_idx = 0
     test_data_jsonl = {}
@@ -88,7 +88,7 @@ def main():
         test_data_jsonl[running_idx] = {'question': ct_question, 'rationale': rationale, 'answer': gold_choice}
         running_idx += 1
     f.close()
-    with open("data/quarel_new/raw/test.jsonl", "w") as f:
+    with open("data/quarel/raw/test.jsonl", "w") as f:
         json.dump(test_data_jsonl, f)
 
 if __name__=="__main__":

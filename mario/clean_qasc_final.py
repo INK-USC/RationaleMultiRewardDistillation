@@ -36,9 +36,9 @@ def main():
     dev_running_idx = 0
     train_data_jsonl = {}
     dev_data_jsonl = {}
-    f1=open("data/qasc_final/raw/train.tsv", "w")
+    f1=open("data/qasc/raw/train.tsv", "w")
     f1.write("Question" + "\t" + "Rationale" + "\t" + "Label" + "\n")
-    f2=open("data/qasc_final/raw/dev.tsv", "w")
+    f2=open("data/qasc/raw/dev.tsv", "w")
     f2.write("Question" + "\t" + "Rationale" + "\t" + "Label" + "\n")
 
     # saving some dev questions
@@ -82,9 +82,9 @@ def main():
         running_idx += 1
     f1.close()
     f2.close()
-    with open("data/qasc_final/raw/train.jsonl", "w") as f:
+    with open("data/qasc/raw/train.jsonl", "w") as f:
         json.dump(train_data_jsonl, f)
-    with open("data/qasc_final/raw/dev.jsonl", "w") as f:
+    with open("data/qasc/raw/dev.jsonl", "w") as f:
         json.dump(dev_data_jsonl, f)
 
     for q in dev_questions1:
@@ -93,7 +93,7 @@ def main():
     del(train_data_jsonl)
 
     # raw test data to be saved # original val
-    f=open("data/qasc_final/raw/test.tsv", "w")
+    f=open("data/qasc/raw/test.tsv", "w")
     f.write("Question" + "\t" + "Rationale" + "\t" + "Label" + "\n")
     running_idx = 0
     test_data_jsonl = {}
@@ -109,7 +109,7 @@ def main():
         test_data_jsonl[running_idx] = {'question': ct_question, 'rationale': rationale, 'answer': gold_choice}
         running_idx += 1
     f.close()
-    with open("data/qasc_final/raw/test.jsonl", "w") as f:
+    with open("data/qasc/raw/test.jsonl", "w") as f:
         json.dump(test_data_jsonl, f)
 
 
