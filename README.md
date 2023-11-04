@@ -6,7 +6,7 @@ This is the code and associated datasets for the paper titled
 
 Project website: [inklab.usc.edu/MaRio](https://inklab.usc.edu/MaRio/)
 
-<img src="https://github.com/iitmnlp/BERT-Analysis-RCQA/assets/17588365/f9ac3e1a-b983-4b4a-a93d-c18e88da63de" width=600>
+<img src="https://github.com/INK-USC/RationaleMultiRewardDistillation/assets/17588365/ca7ec674-dd5f-4e4d-a33b-9bf4cd935a0a" width=700>
 
 [README in-progress]
 
