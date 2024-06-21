@@ -2,7 +2,7 @@
 
 This is the code and associated datasets for the paper titled 
 
->[Tailoring Self-Rationalizers with Multi-Reward Distillation. *Sahana Ramnath, Brihi Joshi, Skyler Hallinan, Ximing Lu, Liunian Harold Li, Aaron Chan, Jack Hessel, Yejin Choi, Xiang Ren.*](https://arxiv.org/abs/2311.02805)
+>[Tailoring Self-Rationalizers with Multi-Reward Distillation. *Sahana Ramnath, Brihi Joshi, Skyler Hallinan, Ximing Lu, Liunian Harold Li, Aaron Chan, Jack Hessel, Yejin Choi, Xiang Ren.*](https://openreview.net/forum?id=t8eO0CiZJV)
 
 Project website: [inklab.usc.edu/MaRio](https://inklab.usc.edu/MaRio/)
 
